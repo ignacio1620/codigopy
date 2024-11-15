@@ -23,7 +23,7 @@ df = obtener_datos_api(api_url)
 # Si hay datos, mostrar el DataFrame, mostrar dataframe con las columnas seleccionadas, permitir filtrado y mostrar gráficos.
 
 if df is not None:
- df = pd.DataFrame(data)
+ 
  # Mostrar los primeros registros
  st.write('Datos obtenidos de la API:')
  st.write(df.head())
