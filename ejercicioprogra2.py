@@ -21,9 +21,8 @@ api_url = 'https://jsonplaceholder.typicode.com/posts'
 # Llamar la función para obtener los datos
 df = obtener_datos_api(api_url)
 # Si hay datos, mostrar el DataFrame, mostrar dataframe con las columnas seleccionadas, permitir filtrado y mostrar gráficos.
+
 if df is not None:
- # Convertir los datos JSON en un DataFrame de Pandas
- data = response.json()
  df = pd.DataFrame(data)
  # Mostrar los primeros registros
  st.write('Datos obtenidos de la API:')
